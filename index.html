@@ -1,252 +1,705 @@
 <!DOCTYPE html>
 <html>
- <!-- If you are reviewing my code, I made it myself, is not a template ;)
- //
- // Dear recruiter / Tech leader:
- //
- // Find here the way I like coding,
- // Despite HTML is pretty boring I can asure my Rails & PostgreSQL abilites stronger than expected
- // Feel free to check every detail and letting me know if found any mistake
- //
- // total_hours_used_here = 18
- //
--->
 <head>
-	<title>Portfolio</title>
-	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>	Mayck Cuellar Portfolio</title>
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Alberto Alonso">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="theme-color" content="#E25D33">
+	<!-- CSS  -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="assets/css/style.css" rel="stylesheet">
 
-	<!-- Mixpanel -->
-	<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-mixpanel.init("98cd2875919d56c58986d86e3ba1e16e");</script><!-- end Mixpanel -->
+	
 
 </head>
-	<body>
-		<!-- About Me -->
-		<section id="about" class="hero is-light is-bold">
-			<!-- Navbar -->
-			<nav class="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
-			  <div class="navbar-brand">
-			    <!-- <a class="navbar-item" href="https://bulma.io">
-			        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-			    </a> -->
-			    <button class="button navbar-burger" data-target="navMenu">
-			      <span></span>
-			      <span></span>
-			      <span></span>
-						<span></span>
-			    </button>
-			  </div>
+<body>
 
-			  <div class="navbar-menu" id="navMenu">
-			    <div class="navbar-start">
-			      <a class="navbar-item" href="https://a-alonso.github.io/portfolio/">
-			        Home
-			      </a>
-			      <div class="navbar-item has-dropdown is-hoverable">
-			        <a class="navbar-link" href="#about">
-			          Recent Work
-			        </a>
-			        <div class="navbar-dropdown is-boxed">
-			          <a class="navbar-item" href="work_hogaru.html">
-			            Hogaru.com
-			          </a>
-								<hr class="navbar-divider">
-			          <a class="navbar-item" href="work_nequi.html">
-			            Nequi Neobank
-			          </a>
-								<hr class="navbar-divider">
-			          <a class="navbar-item" href="work_rappi.html" target:"_blank">
-			            Rappi
-			          </a>
-								<hr class="navbar-divider">
-								<a class="navbar-item" href="work_endava.html" target:"_blank">
-			            Endava Ramp-Up Journal
-			          </a>
-								<hr class="navbar-divider">
-			        </div>
-			      </div>
-			    </div>
 
-			    <div class="navbar-end">
-			      <div class="navbar-item">
-			        <div class="field is-grouped">
-			          <p class="control">
-			            <a class=" button" data-social-network="Linkedin" data-social-target="https://www.linkedin.com/in/albertoalonsog/" target="_blank" href="https://www.linkedin.com/in/albertoalonsog/">
-			              <span class="icon">
-			                <i class="fa fa-linkedin"></i>
-			              </span>
-			              <span>
-			                Linkedin
-			              </span>
-			            </a>
-			          </p>
-			          <p class="control">
-			            <a class="button" href="http://github.com/a-alonso" target="_blank">
-			              <span class="icon">
-			                <i class="fa fa-github"></i>
-			              </span>
-			              <span>Github</span>
-			            </a>
-			          </p>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</nav>
-			<div class="hero-body">
-				<div class="container">
-					<div class="columns is-desktop">
-						<div class="column is-three-quarters">
-							<article class="media">
-								<figure class="media-left">
-									<p class="image is-70x70">
-										<img class="avatar" src="assets/img/avatar.png">
-									</p>
-								</figure>
-								<div class="media-content">
-									<h1 class="title">Alberto Alonso</h1>
-									<h2 class="subtitle">User Experience Designer & Researcher ready for challenges</h2>
-								</div>
-							</article>
-							<p class="">
-								<br/>
-								Data-driven product designer for services levered by technology.
-								Holding a Design degree, worked as a UX Designer and Front-end developer, my background like any other digital product professional is not traditional.<br/>
-								My career is focused on planning, testing, deploying, measuring and iterating digital services
-								<br>
-								<br>
-								Find here a merge between Service Design and Technology Crafting.
-								In the past with: Rappi, Samsung, Intel, IT Minsitry. Mentored by: Y Combinator, Endeavor. Awarded by: MIT Solve, UN Habitat, Startup Summit Spain.
-								<br/><br/>
-								Currently at <span class='has-text-weight-semibold' style='color:	#CD4D2D;'>Endava</span>  and acquiring a certification on data analysis 🤓
-								<br/>
-								Stay in touch! on the right corner buttons to <strong>get in contact</strong><br/>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+	
+	<div id="preloader">
+		<div id="loader">
+			 <div class="loading"></div>
+		</div>
+	</div><img src="assets/images/esquina.svg" class="cornersvg" width="40%">
 
-		<!-- Work -->
-		<section  id="Work" class="section section-2">
+	<div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<h1>Mayck Cuellar<br><div> graphic design / web design<br>/ interaction design · portfolio</div></h1>
+		<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-bars"></i>
+			</button> 
+				
+		</div>
+
+		<nav class="collapse navbar-collapse">
+			
+			<ul id="headernavigation" class="nav navbar-nav">
+				<li class="active"><a href="#iamwhoami" class="ancla" >iamiwhoami</a></li>	
+				<li><a href="#graphic" class="ancla">graphic</a></li>	
+				<li><a href="#web" class="ancla">web</a></li>	
+				<li><a href="#interaction" class="ancla">interaction</a></li>		
+			</ul> 
+		</nav> 
+	</div>
+	
+	
+
+	
+	<section id="iamwhoami" class="section-style no-parallax-bg" >
+		<div class="pattern height-resize">
 			<div class="container">
-				<div class="has-text-centered">
-					<h2 class="title is-2">Recent Work</h2>
+				<h2 class="section-name margin-top-100">
+					<span>WHO AM I <div>(I copied it from the CV)</div></span>
+				</h2>
+				<div class="text-clear"><b>Background. </b>Designer from Universidad de Los Andes with a communication and product emphasis. Specialist in Interaction design from UC San Diego, California. He has a special interest in design vanguards and design pieces narrative power. This has been a perfect way to improve his technological instruments and digital work skills. From digital retouching software management to interactive visual projects programming. Interested in design pieces development, especially those aesthetically and formally emphasized to reach innovation. <br><br><b>Discovery.</b> He has a strong interest in interactive design, web development projects and high impact communication products. From conceptual universe down to sketching and production, he has designed digital interfaces, brading projects, digital campaigns, advertising pieces, stands and interactive installations. Has experience creating aesthetic approaches according to design's current 'state-of-the-art' ; each one to acquire business' validity, credibility and competitiveness within new markets.<br><br>All the contents in this index.html were designed and developed by him.
 				</div>
 
-				<div class="columns is-desktop">
-					<!-- Project 1 -->
-					<div class="column is-6">
-						<a href="work_endava.html" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<figure class="image is-350x150">
-										<img src="assets/img/work_4.jpg" alt="RUJ">
-									</figure>
-								</div>
-								<div class="card-content">
-									<p class="title is-3">Endava Ramp-Up Journal</p>
-									<p class="subtitle is-6">Onboarding tool for large companies | Endava</p>
-									<a href="work_endava.html" target="_blank"><p> <br>Read more
-										<span class="icon">
-											<i class="fa fa-long-arrow-right"></i>
-										</span>
-									</p></a>
-								</div>
-							</a>
-						</div>
-					</div>
-					<!-- Project 2 -->
-					<div class="column is-6">
-						<a href="work_rappi.html" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<figure class="image is-350x150">
-										<img src="assets/img/work_3.jpg" alt="Rappi">
-									</figure>
-								</div>
-								<div class="card-content">
-									<p class="title is-3">Rappi</p>
-									<p class="subtitle is-6">E-Commerce delivery App | 1,273,000 active users | 🇨🇴 🇧🇷 🇦🇷 🇲🇽 🇨🇱</p>
-									<a href="work_rappi.html" target="_blank"><p> <br>Read more
-										<span class="icon">
-											<i class="fa fa-long-arrow-right"></i>
-										</span>
-									</p></a>
-								</div>
-							</a>
-						</div>
-					</div>
-
-
+				<div class="next-section">
+					<a class="go-to-graphic">I am a graphic designer</a>
 				</div>
-				<div class="columns is-desktop">
-					<!-- Project 3 -->
-					<div class="column is-6">
-						<a href="work_hogaru.html" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<figure class="image is-350x150">
-							      <img src="assets/img/work_1.png" alt="Hogaru">
-							    </figure>
-								</div>
-								<div class="card-content">
-									<p class="title is-3">Hogaru.com</p>
-									<p class="subtitle is-6">On Demand cleaning for SMEs and Homes</p>
-									<a href="work_hogaru.html" target="_blank"><p> <br>Read more
-										<span class="icon">
-											<i class="fa fa-long-arrow-right"></i>
-										</span>
-									</p></a>
-								</div>
-							</div>
-						</a>
-					</div>
-					<!-- Project 4 -->
-					<div class="column is-6">
-						<a href="work_nequi.html" target="_blank">
-							<div class="card">
-								<div class="card-image">
-									<figure class="image is-350x150">
-										<img src="https://s3.amazonaws.com/nequi-wp-colombia/wp-content/uploads/2017/12/Descubre-Enviar-y-pedir-768x508.png" alt="Nequi">
-									</figure>
-								</div>
-								<div class="card-content">
-									<p class="title is-3">NEQUI Bancolombia Neobank</p>
-									<p class="subtitle is-6">Micro-crowdlending concept Hackathon demo</p>
-									<a href="work_nequi.html" target="_blank"><p> <br>Read more
-										<span class="icon">
-											<i class="fa fa-long-arrow-right"></i>
-										</span>
-									</p></a>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
+				
 			</div>
-		</section>
+		</div>
+	</section>
+	
+	<section id="graphic" class="section-style parallax-bg" data-background-image="assets/images/background/graphic.jpg">
+		<div class=" height-resize"> 
+<div class="parallax">
+  <div class="parallax-group">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer fill"></div>
+  </div>
+  <div class="content">
+    
+<div class="container">
+				<h2 class="section-name">
+					<span>
+						I am a graphic designer <div>Truly in love with photoshop</div>
+					</span>
+				</h3>
+				
+				<p class="text-clear">
+					These are just some of my projects, if you want to see more please go to my Behance or look at my graphic portfolio (find them in my footer.)
+				</p>
 
-		<!-- Footer -->
-		<section class="section-4 has-text-centered container">
-			<small>© Alberto Alonso Portfolio 2018 👨🏻‍💻 &nbsp;|&nbsp; alberto.alonso@endava.com</small>
-		</section>
+<br><br>
+			</div><!-- /.container -->
+<div class="row">
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#paradoja">
+									<img src="assets/images/projects/paradoja.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">Paradoja</b>
+										<p class="designation">
+											Editorial project
+										</p>
 
-		<!-- Scripts  -->
-		<script src="controller.js"></script>
-		<!-- Contact snippet -->
-		<script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJmYzNjNjMiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6ImJ1YmJsZSIsInByb25vdW4iOiJtZSIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjp0cnVlLCJpbnRyb1RleHQiOiIiLCJjaGFubmVscyI6W1sibGlua2VkaW4iLCJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vYWxiZXJ0b2Fsb25zb2cvIiwic29jaWFsIl0sWyJnaXRodWIiLCJodHRwczovL2dpdGh1Yi5jb20vYS1hbG9uc28iLCJzb2NpYWwiXSxbInNreXBlIiwiKzU3MzAwNTU2NjYzNCIsInNvY2lhbCJdLFsicGhvbmUiLCIrNTczMDA1NTY2NjM0IiwiY2xhc3NpYyJdLFsiZW1haWwiLCJhbG9uc29nLmFsYmVydG9AZ21haWwuY29tIiwiY2xhc3NpYyJdXX0='></script>
-	</body>
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#monstruos">
+									<img src="assets/images/projects/monstruos.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">No lugar para monstruos internos</b>
+										<p class="designation">
+											Art direction project
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#culto">
+									<img src="assets/images/projects/culto.png" class="thumb-project">
+									<figcaption>
+										<b class="project-name">e l c u l t o</b>
+										<p class="designation">
+											Short film
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#urban">
+									<img src="assets/images/projects/urban.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">Urban typography</b>
+										<p class="designation">
+											Typography project
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+
+					</div>
+					
+
+
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#poison">
+									<img src="assets/images/projects/poisonproject.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">thepoisonproject</b>
+										<p class="designation">
+											Personal illustration project
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#body">
+									<img src="assets/images/projects/body.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">Body nomad</b>
+										<p class="designation">
+											Photography · art direction project
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#drops">
+									<img src="assets/images/projects/drops.png" class="thumb-project">
+									<figcaption>
+										<b class="project-name">drops</b>
+										<p class="designation">
+											Editorial project
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#cinnabon">
+									<img src="assets/images/projects/cinnabon.png" class="thumb-project">
+									<figcaption>
+										<b class="project-name">Cinnabon package</b>
+										<p class="designation">
+											Service and package design
+
+											
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+
+					</div>
+  </div>
+  	
+</div>
+<div class="next-section">
+					<a class="go-to-web"><span>I am a web designer</span></a>
+				</div>			
+			
+		
+
+
+
+
+		</div>
+		
+		
+	</section>
+	
+
+
+
+	
+	<section id="web" class="section-style parallax-bg" data-background-image="assets/images/background/web-background.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h2 class="section-name">
+					<span>
+						I am a web designer <div>Sometimes I hate JS</div>
+					</span>
+				</h2>
+				
+				<p class="text-clear">
+					Back in 2012 I made my first web and branding project with the European Creativity School - EUCREATES, at that time I used to work with Dreamweaver (is embarrasing, I know, although sometimes is useful to develop thousand-table-mails). Now I work 100% as a visual designer, you'll see me working always with Photoshop, Illustrator and Sublime text (sometimes sketch or some invision tab too). You can now imagine how much RAM I need to work!
+				</p>
+
+<br><br><hr>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1 text-right">
+			<h3>
+						Web page redesign<br>Hogaru
+					</h3><br>This was a branding and a website project for a housemaid startup. The company didn't have a clear indentity more than a logo, and their first webpage was poorly made. The new proposal included a new range of icons, a color palette, a photography usage guide and the design/developing of the new webpage. After the  identity strengthen and web design project, the company was selected as the more 'innovative' startup in Colombia by Wayra Spain.</div>
+				<div class="col-sm-5">
+			<div class="screenframe">
+<img src="assets/images/projects/hogaru.gif">
+</div></div>
+</div>
+<div class="row">
+				
+				<div class="col-sm-5 col-sm-offset-2">
+			<div class="screenframe">
+<video autoplay loop width="100%" height="auto" name="Video Name" src="assets/images/projects/graficoop.mov"></video>
+</div></div>
+<div class="col-sm-4 text-left">
+			<h3>
+						Graficoop<br>Empresa de Artes Gráficas
+					</h3><br>Graficoop is a printing and design company that needed a website rebuild with a fresh look. I was in all the design process, from the sketching to the developing, the page was made with Foundation, using HTML and CSS3, including some parallax, jQuery sliders and components</div>
+</div>
+<div class="row">
+				<div class="col-sm-4 col-sm-offset-1 text-right">
+			<h3>
+						Customers page redesign<br>Bizagi
+					</h3><br>As part of the refresh of the Bizagi branding, the challenge on the redesign of the customers page was to create a new look for it having in mind the big amount of information. I improved the user experience and the interaction of the page, creating these boxes with a unique identity for each of the industries, maintining the Bizagi look and feel and colors but proposing a more up-to-date aesthetic to make it less boring, more dynamic and more user friendly. </div>
+				<div class="col-sm-5">
+			<div class="screenframe">
+<img src="assets/images/projects/customers.gif">
+</div></div>
+</div>
+<div class="row">
+				
+				<div class="col-sm-5 col-sm-offset-2">
+			<div class="screenframe">
+<video autoplay loop width="100%" height="auto" name="Video Name" src="assets/images/projects/miami.mov"></video>
+</div></div>
+<div class="col-sm-4 text-left">
+			<h3>
+						Miami event<br>Bizagi
+					</h3><br>One of the most recent campaigns on the Bizagi marketing area was a Miami event for 2018. The entire campaign has its own identity colors and the miami vibes had to be present on the website design. The page was built in bootstrap from scratch, using Jquery, parallax, modernizr and some other customized scripts for the buttons shining.</div>
+</div>
+		</div><div class="next-section">
+					<a class="go-to-interaction"><span>I am an interaction designer</span></a>
+				</div>			
+
+	</section>
+
+
+
+	<!-- Contact Section -->
+	<section id="interaction" class="section-style no-parallax-bg" data-background-image="assets/images/background/interaction.jpg">
+		<div class="pattern height-resize">
+			<div class="container">
+				<h2 class="section-name">
+					<span>
+						I am an interaction designer <div>The specialization finished this year</div>
+					</span>
+				</h2>
+				
+				<p class="text-clear">
+					This is the shortest part of my experience, my first interaction work was for my design undergraduate degree, I learnt how to program a chip using a standard called Wiring (something similar to arduino), it allowed me to control different sensors in a gallery space to control the sound of an interactive installation. Another project I worked with was a digital interaction one, using invision I designed a mobile app for tennis players in Colombia.<br><br>
+				</p>
+<hr>
+
+<div class="row">
+						<div class="col-sm-6">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#manifestaciones">
+									<img src="assets/images/projects/manifestaciones.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">Manifestaciones</b>
+										<p class="designation">
+											
+Interactive installation.
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="project">
+								<figure data-toggle="modal" data-target="#goat">
+									<img src="assets/images/projects/goat.jpg" class="thumb-project">
+									<figcaption>
+										<b class="project-name">GOAT</b>
+										<p class="designation">
+											Mobile App.
+										</p>
+
+									</figcaption>
+								</figure>
+								
+							</div>
+						</div>
+						</div>
+			</div>
+			<div class="next-section">
+					<a class="go-to-iamwhoami">Who am I (again)</a>
+				</div>
+		</div>
+
+	</section>
+	
+
+
+
+	<!-- Footer Section -->
+	<footer id="footer-section" class="text-center">
+		<p class="copyright">
+			&copy;2017, All Rights Reserved. Mayck Cuellar.<br>To find more information and projects please visit my social media and graphic portfolio below.
+<br><a href="https://www.linkedin.com/in/mayck69/">		<i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://www.instagram.com/mayck_">		<i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="https://www.behance.net/mayck">		<i class="fa fa-behance" aria-hidden="true"></i></a>
+<a href="https://www.dropbox.com/sh/71z1mm7kqwm06vg/AACuhvLaQsfUZRK-cHynrciKa?dl=0"><i class="fa fa-book" aria-hidden="true"></i></a>
+		</p>
+
+
+	</footer>
+	<!-- Footer Section End -->
+<!-- Paradoja -->
+<div id="paradoja" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">Paradoja</h4>
+      </div>
+      <div class="modal-body">
+        <p>Paradoja (paradox) is an editorial project that presents an exploration of the convergence between the digital universe with the analog one in design. The experimentation process between colors, papers, textures and forms make this project an interesting statement about how I work on design. 
+ 		
+ 		Paradoja defines itself as an aesthetic paradoxical universe, that is in transformation all the time, transgressing some traditionalisms and making evident a graphical and communicational purpose.</p>
+        <img src="assets/images/projects/paradoja2.png">
+        <img src="assets/images/projects/paradoja3.jpg">
+        <img src="assets/images/projects/paradoja4.jpg">
+        <img src="assets/images/projects/paradoja5.png">
+        <img src="assets/images/projects/paradoja6.png">
+        <img src="assets/images/projects/paradoja7.jpg">
+        <img src="assets/images/projects/paradoja8.jpg">
+      </div>
+      
+    </div>
+
+
+  </div>
+</div>
+<!-- Monstruos -->
+<div id="monstruos" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">No lugar para monstruos internos</h4>
+      </div>
+      <div class="modal-body">
+        <p>Editorial project for the creative direction of "No lugar para monstruos internos" presented as an object-book that talks about the aesthetic intection of an interactive instalation with the same name. In this case some textures, rubble and elements from the installation were used to create the book</p>
+        <img src="assets/images/projects/monstruos2.jpg">
+        <img src="assets/images/projects/monstruos3.jpg">
+        <img src="assets/images/projects/monstruos4.jpg">
+        <img src="assets/images/projects/monstruos5.jpg">
+        <img src="assets/images/projects/monstruos6.jpg">
+        <img src="assets/images/projects/monstruos7.jpg">
+         
+      </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+<!-- culto -->
+<div id="culto" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">e l c u l t o</h4>
+      </div>
+      <div class="modal-body">
+        <p>Short film.
+        	<br>
+        	Script, direction and post-production by:<br>
+        	Mayck Cuellar<br>Alejandra Lopez<br>Juan Daniel Velásquez<br><br>Performed by:<br>Ángela Castrillón
+<br>Gabriel Torres
+<br>Nixon Suarez
+<br>Camila Vargas 
+<br>Sebastián Payán<br><br>Special collaboration by:<br>André Piaf<br>
+        </p>
+        <img src="assets/images/projects/culto2.jpg">
+        <img src="assets/images/projects/culto3.png">
+        <img src="assets/images/projects/culto4.png">
+        <img src="assets/images/projects/culto5.png">
+        <img src="assets/images/projects/culto6.png">
+        <img src="assets/images/projects/culto7.png">
+
+         <iframe src="https://player.vimeo.com/video/105441584" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/105441584">e    l    c    u    l     t    o</a> from <a href="https://vimeo.com/user28630542">alejandra</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+<!-- urban -->
+<div id="urban" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">Urban typography</h4>
+      </div>
+      <div class="modal-body">
+        <p> 
+        	This is a series of typographical projects that uses the public space as a graphical experimentation lab. As a result, several ephimeral scenarios that makes the passerby a performer of the experience.</p>
+        <img src="assets/images/projects/typo2.jpg">
+        <img src="assets/images/projects/typo3.jpg">
+        <img src="assets/images/projects/typo4.jpg">
+        <img src="assets/images/projects/typo5.jpg">
+        <img src="assets/images/projects/typo6.jpg">
+        <img src="assets/images/projects/typo7.jpg">
+        <img src="assets/images/projects/typo8.jpg">
+        <img src="assets/images/projects/typo9.jpg">
+        <img src="assets/images/projects/typo10.jpg">
+        <img src="assets/images/projects/typo11.jpg">
+        
+      </div>
+      
+    </div>
+ </div>
+</div>
+    <!-- poison -->
+<div id="poison" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">thepoisonproject</h4>
+      </div>
+      <div class="modal-body">
+        <p>To structure and execute from an instinctive practice, where shapes answer to aesthetic whims, implies a responsibility to avoid contempt towards technicalities. Breaking up from the constant intention of design to reinterpretation of the known environment, a graphic universe is presented instead. one that behaves, acts and it is perceived in a specific language. thepoisonproject opens a path for experimentation, and breaks away from the traditional practices, to print using obsessive shapes, imprecise geometries and high visual contrast; an atypical visual universe.<br><br>This project was featured on <a target="_blank" href="https://issuu.com/sciomagazine/docs/scio_e02_issuu">SCIO magazine </a></p>
+        <img src="assets/images/projects/Closer.jpg">
+        <img src="assets/images/projects/defragment.jpg">
+        <img src="assets/images/projects/escaping.jpg">
+        <img src="assets/images/projects/grafito.jpg">
+        <img src="assets/images/projects/stone-call.jpg">
+        
+      </div>
+      
+    </div>
+
+
+  </div>
+</div>
+<!-- body -->
+<div id="body" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">Body nomad</h4>
+      </div>
+      <div class="modal-body">
+        <p>Photography project by Mayck Cuellar, Sergio Mantilla and Rafael Zuñiga. In colaboration with Annelie Franke and Alejandro Barragan. Model Nicky.</p>
+        <img src="assets/images/projects/body2.jpg">
+        <img src="assets/images/projects/body3.jpg">
+        <img src="assets/images/projects/body4.jpg">
+        
+         
+      </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+<!-- drops -->
+<div id="drops" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">drops</h4>
+      </div>
+      <div class="modal-body">
+        <p>Little book based on the analysis of the music video "drops" from IAMAMIWHOAMI. This is a graphical proposal from the conceptual universe of the audiovisual piece.
+        </p>
+        <img src="assets/images/projects/drops2.png">
+        <img src="assets/images/projects/drops3.png">
+        <img src="assets/images/projects/drops4.png">
+        <img src="assets/images/projects/drops5.png">
+        
+      </div>
+      
+    </div>
+    
+
+  </div>
+</div>
+<!-- cinnabon -->
+<div id="cinnabon" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">Cinnabon</h4>
+      </div>
+      <div class="modal-body">
+        <p> 
+        	<i>“People are hard on themselves.We are our own best critics. So how about a little positive reinforcement from time to time? Cinnabon is more than just an afternoon treat; it’s an exercise in ecstasy. An edible reminder that you deserve the best.A delicious way to say,“Thanks”.We are the warm hug you need after a hard day, the reward you deserve after putting your best foot forward.The perfect escape from the ordinary, from humpdays to birthdays. No matter what occasion, Cinnabon is the guaranteed way to sweeten any day and put a smile on your face.” Cinnabon 
+<br>_</i>
+</p>
+    <p> 
+
+Cinnabon Colombia's service and packaging design consultancy project for its new "On The Go" concept. In charge and led by Mayck Cuellar, Luisa Donado, Audrey Hirelle and Camila Gutierrez.<br><br>
+
+    	The packaging was designed to seal the product from the outside, that allows the vapor to conserve the heat inside. It also allows the smell to be spelled when opening the packaging, because the smell always get lost with the traditional package.
+ <br><br>
+To allow other products to take advantage of the design features, there will be the possibility of assembling the beverage packaging along with the food package, depending on what the customer requests.
+ <br><br>
+It also includes a small saw, plasticised, so that the user can unwind the cinnamon roll and have the possibility to cut it using only one hand.
+ <br><br>
+A part of the package will allow one or two hot drinks to be loaded, and a steam is used to heat the product. The system allows the drinks to be fixed to the center of the package, widening the opening in the center of the box, so that it can be transported in a safe manner and by gravity action will always remain in the same place. It also allows the person to take the cup, drink and then put it back in place, allowing consumption on the road.
+</p>
+    <img src="assets/images/projects/cinnabon2.png">
+    <img src="assets/images/projects/cinnabon3.png">
+    <img src="assets/images/projects/cinnabon4.png">
+    <img src="assets/images/projects/cinnabon5.png">
+    <img src="assets/images/projects/cinnabon6.png">
+    <img src="assets/images/projects/cinnabon7.png">
+
+         
+      </div>
+      
+    </div></div>
+      
+    </div>
+
+    <!-- manifestaciones -->
+<div id="manifestaciones" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">Manifestaciones</h4>
+      </div>
+      <div class="modal-body">
+        <p> 
+        	Interactive installation that responds to an exploration on the physical qualities of light as a resource to project the effects of sound over water.
+<br><br>
+The viewer interacts with the scene causing subtle changes in the sound that immerses him in a light experience.
+<br><br>
+The development of this project is the result of a process of experimentation and exploration of form through light and its physical qualities. It arises from my interest in the effects produced by light and its ability to intervene in our perception of the environment.
+<br>
+<br>
+For this project the cymatics play a fundamental role, the light projections are configured in the space of the experience and reacts to alterations on the surface of the water. The vibrations responsible for these changes are the result of the viewer's position in space, the system will know that because of several movement sensors around the space.
+ <br><br>
+The design in this case permeates all aspects of the installation offering an aesthetic proposal according to the fundamentals applied to the interaction, graphic composition and product development.
+</p>
+    <img src="assets/images/projects/manifestaciones2.png">
+    <img src="assets/images/projects/manifestaciones3.jpg">
+    <img src="assets/images/projects/manifestaciones4.jpg">
+    <img src="assets/images/projects/manifestaciones5.png">
+    <img src="assets/images/projects/manifestaciones6.png">
+        <video controls width="100%" height="auto" name="manifestaciones" src="assets/images/projects/manifestaciones.mp4"></video>
+         
+      </div>
+      
+    </div></div>
+      
+    </div>
+
+    <!-- goat -->
+<div id="goat" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+        <h4 class="modal-title">GOAT</h4>
+      </div>
+      <div class="modal-body">
+        <p> 
+        	This app is a recommendation platform for tennis players. The app asks all kind of relevant information about the physical form of each person to recommend things, such as racquets, clothes, balls, and all kind of materials. The app will also connect to a smartwatch to register the games information and the performance of each player.
+</p>
+
+    <img src="assets/images/projects/goat1.png">
+        <img src="assets/images/projects/goat2.png">
+        <img src="assets/images/projects/goat3.png">
+        <video controls width="100%" height="auto" name="Goat" src="assets/images/projects/goat-commercial.mp4"></video>
+         
+      </div>
+      
+    </div></div>
+      
+    </div>
+    
+
+ 
+	<!-- jQuery Library -->
+	<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+	<!-- Modernizr js -->
+	<script type="text/javascript" src="assets/js/modernizr-2.8.0.min.js"></script>
+	<!-- Plugins -->
+	<script type="text/javascript" src="assets/js/plugins.js"></script>
+	<!-- Custom JavaScript Functions -->
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+	<!-- jquery.parallax.js -->
+	<script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(window).load(function(){
+				$("#iamwhoami").parallax("50%", 0.2);
+				$("#web").parallax("50%", 0.2);
+			})
+		})
+	</script>
+
+	
+</body>
 </html>
