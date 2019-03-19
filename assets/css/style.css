@@ -115,6 +115,7 @@ h1>div{
     text-decoration: line-through;
 	}
 .text-clear{
+	position: relative;
 	text-align: left;
     font-family: serif;
     font-weight: 200;
@@ -255,6 +256,9 @@ h1>div{
 }
 
 /*graphic section parallax*/
+#graphic{
+	background: #7759e5; 
+}
 .bg {
   
   height: 100%;
@@ -295,10 +299,10 @@ h1>div{
 }
 
 .parallax-group div:nth-child(1) {
-  margin-top: 400px;
+  margin-top: 200px;
     background-color: #72fce7;
-    -webkit-transform: translateZ(-12px) scale(13);
-    transform: translateZ(-12px) scale(13);
+    -webkit-transform: translateZ(-7px) scale(8);
+    transform: translateZ(-7px) scale(8);
     opacity: 0.5;
 }
 .parallax-group div:nth-child(1):before {
@@ -311,15 +315,15 @@ h1>div{
     background-image: -webkit-linear-gradient(315deg, transparent 66%, #72fce7 66.01%), -webkit-linear-gradient(45deg, #72fce7 34%, transparent 34.01%);
     background-image: linear-gradient(135deg, transparent 66%, #72fbe7 66.01%), linear-gradient(45deg, #72fce7 34%, transparent 34.01%);
     background-position: 254px 0px;
-    background-size: 110px 100%;
+    background-size: 70px 100%;
     background-repeat: repeat-x;
 }
 
 .parallax-group div:nth-child(2) {
-  margin-top: 900px;
+  margin-top: 600px;
     background-color: #89e6ff;
-    -webkit-transform: translateZ(-10px) scale(11);
-    transform: translateZ(-10px) scale(11);
+    -webkit-transform: translateZ(-4px) scale(6);
+    transform: translateZ(-4px) scale(6);
     opacity: 0.5;
 }
 .parallax-group div:nth-child(2):before {
@@ -332,15 +336,15 @@ h1>div{
     background-image: -webkit-linear-gradient(315deg, transparent 66%, #89e6ff 66.01%), -webkit-linear-gradient(45deg, #89e6ff 34%, transparent 34.01%);
     background-image: linear-gradient(135deg, transparent 66%, #8ae6ff 66.01%), linear-gradient(45deg, #8ae6ff 34%, transparent 34.01%);
     background-position: 242px 0px;
-    background-size: 150px 100%;
+    background-size: 80px 100%;
     background-repeat: repeat-x;
 }
 
 .parallax-group div:nth-child(3) {
-  margin-top: 1200px;
+  margin-top: 800px;
     background-color: #c5d7ff;
-    -webkit-transform: translateZ(-8px) scale(9);
-    transform: translateZ(-8px) scale(9);
+    -webkit-transform: translateZ(-4px) scale(6);
+    transform: translateZ(-4px) scale(6);
     opacity: 0.5;
 }
 .parallax-group div:nth-child(3):before {
@@ -353,15 +357,15 @@ h1>div{
     background-image: -webkit-linear-gradient(315deg, transparent 66%, #c5d7ff 66.01%), -webkit-linear-gradient(45deg, #c5d7ff 34%, transparent 34.01%);
     background-image: linear-gradient(135deg, transparent 66%, #c5d7ff 66.01%), linear-gradient(45deg, #c5d7ff 34%, transparent 34.01%);
     background-position: 133px 0px;
-    background-size: 180px 100%;
+    background-size: 100px 100%;
     background-repeat: repeat-x;
 }
 
 .parallax-group div:nth-child(4) {
-  margin-top: 1500px;
+  margin-top: 1000px;
     background-color: #a3bcf4;
-    -webkit-transform: translateZ(-6px) scale(7);
-    transform: translateZ(-6px) scale(7);
+    -webkit-transform: translateZ(-4px) scale(5);
+    transform: translateZ(-4px) scale(5);
 opacity: 0.5;
 }
 .parallax-group div:nth-child(4):before {
@@ -374,15 +378,15 @@ opacity: 0.5;
     background-image: -webkit-linear-gradient(315deg, transparent 66%, #a3bcf4 66.01%), -webkit-linear-gradient(45deg, #a3bcf4 34%, transparent 34.01%);
     background-image: linear-gradient(135deg, transparent 66%, #a3bcf4 66.01%), linear-gradient(45deg, #a3bcf4 34%, transparent 34.01%);
     background-position: 169px 0px;
-    background-size: 210px 100%;
+    background-size: 120px 100%;
     background-repeat: repeat-x;
 }
 
 .parallax-group div:nth-child(5) {
-  margin-top: 1800px;
+  margin-top: 1200px;
     background-color: #68a5fe;
     -webkit-transform: translateZ(-4px) scale(5);
-    transform: translateZ(-4px) scale(5);
+    transform: translateZ(-3px) scale(4);
     opacity: 0.5;
 }
 .parallax-group div:nth-child(5):before {
@@ -395,13 +399,18 @@ opacity: 0.5;
     background-image: -webkit-linear-gradient(315deg, transparent 66%, #68a5fe 66.01%), -webkit-linear-gradient(45deg, #68a5fe 34%, transparent 34.01%);
     background-image: linear-gradient(135deg, transparent 66%, #68a5fe 66.01%), linear-gradient(45deg, #68a5fe 34%, transparent 34.01%);
     background-position: 27px 0px;
-    background-size: 240px 100%;
+    background-size: 140px 100%;
     background-repeat: repeat-x;
 }
 
 .parallax-group div:nth-child(6) {
-  margin-top: 2100px;
-    background-color: #ac7bcb;
+  margin-top: 1400px;
+    
+background: #872ab8; /* Old browsers */
+background: -moz-linear-gradient(top, #872ab8 10%, #7759e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #872ab8 10%,#7759e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #872ab8 10%,#7759e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872ab8', endColorstr='#7759e5',GradientType=0 ); /* IE6-9 */
     -webkit-transform: translateZ(-2px) scale(3);
     transform: translateZ(-2px) scale(3);
 }
@@ -412,20 +421,20 @@ opacity: 0.5;
     position: absolute;
     bottom: 100%;
     left: 0;
-    background-image: -webkit-linear-gradient(315deg, transparent 66%, #ac7bcb 66.01%), -webkit-linear-gradient(45deg, #ac7bcb 34%, transparent 34.01%);
-    background-image: linear-gradient(135deg, transparent 66%, #ac7bcb 66.01%), linear-gradient(45deg, #ac7bcb 34%, transparent 34.01%);
+    background-image: -webkit-linear-gradient(315deg, transparent 66%, #872ab8 66.01%), -webkit-linear-gradient(45deg, #872ab8 34%, transparent 34.01%);
+    background-image: linear-gradient(135deg, transparent 66%, #872ab8 66.01%), linear-gradient(45deg, #872ab8 34%, transparent 34.01%);
     background-position: 288px 0px;
-    background-size: 260px 100%;
+    background-size: 160px 100%;
     background-repeat: repeat-x;
 }
 
 .content {
   position: relative;
   color: white;
-  margin-top: 800px;
-  padding-bottom: 200px;
-  -webkit-transform: translateZ(-2px) scale(3);
-          transform: translateZ(-2px) scale(3);
+  margin-top: 500px;
+  
+  -webkit-transform: translateZ(-5px) scale(6);
+          transform: translateZ(-5px) scale(6);
 }
 
 .fill {
