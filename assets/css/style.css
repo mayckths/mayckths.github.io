@@ -65,7 +65,23 @@ h1>div{
 #interaction{
 	color:white;
 }
-
+ .row.isflex {
+   display: flex;
+   flex-wrap: wrap;
+   }
+   .row.isflex > [class*='col-'] {
+   display: flex;
+   flex-direction: column;
+   }
+   .row.isflex {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+   }
 /* Â *********************IFRAME ********************* */
 
 .screenframe {
@@ -134,8 +150,10 @@ h1>div{
 .next-section{
 	text-align:center;
 }
-.m-0{
-	margin:0 !important;
+.container-visual{
+	max-width: 1700px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .pattern.height-resize{
@@ -386,7 +404,7 @@ opacity: 0.5;
 }
 
 .parallax-group div:nth-child(6) {
-  margin-top: 1400px;
+  margin-top: 2450px;
     
 background: #872ab8; /* Old browsers */
 background: -moz-linear-gradient(top, #872ab8 10%, #7759e5 100%); /* FF3.6-15 */
