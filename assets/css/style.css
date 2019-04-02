@@ -42,6 +42,7 @@ a:focus{
 
 .container{
 	overflow:hidden;
+	padding:15px;
 }
 h1{
 	padding: 10px;
@@ -93,6 +94,7 @@ h1>div{
     text-transform: uppercase;
     font-family: sans-serif;
     margin: auto;
+
 }
 .section-name span{
 	display:inline-block;
@@ -132,26 +134,9 @@ h1>div{
 .next-section{
 	text-align:center;
 }
-.next-section a{
-	cursor: pointer;
-    display: inline-block;
-    width: 50%;
-    color: black;
-    height: 120px;
-    
-    margin: 70px;
-    padding-top: 45px;
+.m-0{
+	margin:0 !important;
 }
-
-
-.next-section a:hover{
-	opacity:0.5;
-
-	text-decoration: none;
-
-
-}
-
 
 .pattern.height-resize{
 	padding-top: 40px;
@@ -288,7 +273,6 @@ h1>div{
   -webkit-perspective: 1px;
           perspective: 1px;
 }
-
 .parallax-group {
   position: relative;
   height: 100vh;
@@ -624,12 +608,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872ab8', end
     padding-top: 0;
     position: absolute;
 	}
+.parallax {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.content{
+	    margin-top: 100px;
+}
 }
 @media (min-width: 992px){
 	.container{
 		width:100%;
 		max-width:830px;
 	}
+	
 	
 }
 
@@ -674,17 +667,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#872ab8', end
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 175px;
-	height: 175px;
+	width: 0;
+	height: 25px;
 	margin: auto;
 }
 #loader .loading{
 	
 	background-repeat: no-repeat;
 	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -40px;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	top:auto;
 	height: 20px;
 	width: 180px;
 	background-position: 50% 50%;
