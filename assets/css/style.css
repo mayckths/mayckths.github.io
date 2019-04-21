@@ -484,7 +484,7 @@ h1>div {
 	padding: 60px 15px 0 15px
 }
 .project {
-padding-bottom: 20px;
+margin-bottom: 20px;
 }
 .project-container .project {
 	max-width: 245px;
@@ -672,7 +672,7 @@ padding-bottom: 20px;
 #preloader {
 	position: fixed;
 	width: 100%;
-	background: rgba(255, 255, 255, .97);
+	background: rgba(0, 255, 225, 0.8);
 	height: 100%;
 	z-index: 99999999999
 }
@@ -683,8 +683,8 @@ padding-bottom: 20px;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 0;
-	height: 25px;
+	width: 40px;
+	height: 40px;
 	margin: auto
 }
 
