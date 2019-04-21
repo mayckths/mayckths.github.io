@@ -33,7 +33,7 @@ a:focus {
 }
 
 .pattern {
-	padding-top: 100px
+	padding: 100px 0;
 }
 
 .parallax-bg {
@@ -89,6 +89,7 @@ h1>div {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap
 }
+
 
 .screenframe {
 	position: relative;
@@ -158,6 +159,14 @@ h1>div {
 	max-width: 1700px;
 	margin-right: auto;
 	margin-left: auto
+}
+
+.container-visual>[class*=col-] {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.container-visual>[class*=col-].text-right, .container-visual>[class*=col-].text-left {
+	padding-bottom: 20px;
 }
 
 .pattern.height-resize {
