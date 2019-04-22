@@ -4,12 +4,12 @@
 
 var  graphicImage = jQuery('#graphic').data('background-image');
 var  webImage = jQuery('#web').data('background-image');
-var  interactionImage = jQuery('#interaction').data('background-image');
+var  interactionImage = jQuery('#userinterface').data('background-image');
 
 
 if (graphicImage) {  jQuery('#graphic').css({ 'background-image':'url(' + graphicImage + ')' }); };
 if (webImage) {  jQuery('#web').css({ 'background-image':'url(' + webImage + ')' }); };
-if (interactionImage) {  jQuery('#interaction').css({ 'background-image':'url(' + interactionImage + ')' }); };
+if (interactionImage) {  jQuery('#userinterface').css({ 'background-image':'url(' + interactionImage + ')' }); };
 
 /* Background Images End
 -------------------------------------------------------------------*/
@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
     	$('html,body').animate({scrollTop:$('#web').offset().top}, 1000);
   	});
   	$('.next-section .go-to-interaction').click(function() {
-    	$('html,body').animate({scrollTop:$('#interaction').offset().top}, 1000);
+    	$('html,body').animate({scrollTop:$('#userinterface').offset().top}, 1000);
   	});
   	$('.next-section .go-to-iamwhoami').click(function() {
     	$('html,body').animate({scrollTop:$('#iamwhoami').offset().top}, 1000);
